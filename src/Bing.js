@@ -1,17 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {GridLayer, withLeaflet} from 'react-leaflet';
+
+import { createLayerComponent } from '@react-leaflet/core';
 import {bingLayer} from './leaflet.bing';
 
+const createLeafletElement = (props) => {
 
-class BingLayer extends GridLayer {
-  static propTypes = {
-    bingkey: PropTypes.string.isRequired
-  };
+    const instance = L.bingLayer(props.bingkey, props);
 
-  createLeafletElement(props) {
-    return L.bingLayer(props.bingkey, this.getOptions(props));
+    return { instance };
   }
-}
 
-export default withLeaflet(BingLayer);
+export default createLayerComponent(createLeafletElement);

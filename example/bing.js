@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, Circle, TileLayer, LayersControl } from 'react-leaflet'
+import { MapContainer, TileLayer, LayersControl } from 'react-leaflet'
 import {BingLayer} from '../src'
 
 const { BaseLayer, Overlay } = LayersControl;
@@ -15,13 +15,11 @@ export default class BingExample extends React.Component {
     }
   }
 
-
-  
   render() {
     const bing_key = "YOUR-BING-KEY"
     return (
       
-        <Map center={[42.09618442380296, -71.5045166015625]} zoom={2} zoomControl={true}>
+        <MapContainer center={[42.09618442380296, -71.5045166015625]} zoom={2} zoomControl={true}>
           <LayersControl position='topright'>
             <BaseLayer  name='OpenStreetMap.Mapnik'>
               <TileLayer  url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
@@ -36,7 +34,7 @@ export default class BingExample extends React.Component {
               <BingLayer  bingkey={bing_key} type="AerialWithLabels" />
             </BaseLayer>
           </LayersControl>
-        </Map>
+        </MapContainer>
     )
   }
 }
