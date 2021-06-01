@@ -3,13 +3,12 @@ Bing layer as React component for Leaflet  build on top of [React-Leaflet](https
 
 ![Bing example](images/example.gif)
 
-# Installation
+## Complete example with react-leaflet-geosearch
+
 To get started, to be able to run the example you have execute:
 ```bash
 npm install
 ```
-
-## Complete example with react-leaflet-geosearch
 
 ```jsx
 import React from 'react';
