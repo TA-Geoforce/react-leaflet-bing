@@ -22,6 +22,5 @@ describe("Check if Bing renders", () => {
         )
         expect((wrapper).find(BingLayer).prop('bingkey')).toEqual("your-key");
         expect((wrapper).find(BingLayer).prop('type')).toEqual("Road");
-    
     })
 })
