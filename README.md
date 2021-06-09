@@ -18,9 +18,7 @@ import {BingLayer} from '../src'
 
 const { BaseLayer, Overlay } = LayersControl;
 
-
 export default class BingExample extends React.Component {
-
   constructor() {
     super();
     this.state = {
@@ -28,7 +26,6 @@ export default class BingExample extends React.Component {
       isadded: false
     }
   }
-
   render() {
     const bing_key = "YOUR-BING-KEY"
     return (
@@ -51,6 +48,7 @@ export default class BingExample extends React.Component {
     )
   }
 }
+
 ```
 
 You can find the following example in the folder ```example```. Run the above code by executing the following scripts in package.json, with the order they are stated underneath:
