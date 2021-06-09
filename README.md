@@ -1,4 +1,5 @@
 # react-leaflet-bing [![npm version](https://img.shields.io/npm/v/react-leaflet-bing-v2.svg)](https://www.npmjs.com/package/react-leaflet-bing-v2)![npm downloads](https://img.shields.io/npm/dw/react-leaflet-bing-v2)[![Node.js CI](https://github.com/TA-Geoforce/react-leaflet-bing-v2/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/TA-Geoforce/react-leaflet-bing-v2/actions/workflows/npm-publish.yml)[![Node.js CI](https://github.com/TA-Geoforce/react-leaflet-bing-v2/actions/workflows/node.js.yml/badge.svg)](https://github.com/TA-Geoforce/react-leaflet-bing-v2/actions/workflows/node.js.yml)
+
 Bing layer as React component for Leaflet  build on top of [React-Leaflet](https://github.com/PaulLeCam/react-leaflet).
 
 ![Bing example](images/example.gif)
