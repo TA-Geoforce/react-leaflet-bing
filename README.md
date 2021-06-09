@@ -32,7 +32,6 @@ export default class BingExample extends React.Component {
   render() {
     const bing_key = "YOUR-BING-KEY"
     return (
-      
         <MapContainer center={[42.09618442380296, -71.5045166015625]} zoom={2} zoomControl={true}>
           <LayersControl position='topright'>
             <BaseLayer  name='OpenStreetMap.Mapnik'>
