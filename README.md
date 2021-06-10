@@ -68,4 +68,3 @@ culture     | string | for supported culture codes see: https://msdn.microsoft.c
 style       | string | REST style parameters see: https://msdn.microsoft.com/en-us/library/mt823636.aspx#Related%20Resources | ''
 
 For more details on how to use this plugin check the example.
-
