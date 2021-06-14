@@ -11,11 +11,7 @@
     "build:dist": "webpack src/index.js dist/react-leaflet-bing.js & webpack -p src/index.js dist/react-leaflet-bing.min.js",
     "build": "npm run build:lib && npm run build:dist",
     "example": "webpack-dev-server --config ./example/webpack.config.js",
-    "lint": "eslint ./src",
-    "release:major": "npm version major && git push --follow-tags",
-    "release:minor": "npm version minor && git push --follow-tags",
-    "release:patch": "npm version patch && git push --follow-tags",
-    "publish": "npm publish"
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
