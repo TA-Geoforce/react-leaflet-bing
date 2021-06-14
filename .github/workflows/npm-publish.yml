@@ -23,3 +23,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
+      - name: Commit files
+        run: |
+          git config --local user.email "root@users.noreply.github.com"
+          git config --local user.name "root"
+          git add .
+          git commit -m "[skip-ci]"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
