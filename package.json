@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-bing-v2",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "Bing layer as React component for Leaflet",
   "main": "dist/react-leaflet-bing.js",
   "scripts": {
@@ -50,6 +50,9 @@
     "@babel/preset-flow": "^7.13.13",
     "@babel/preset-react": "^7.13.13",
     "@babel/runtime": "^7.14.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/release-notes-generator": "^9.0.3",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
