@@ -1,1 +1,1 @@
-export BingLayer from "./Bing";
+export { default as BingLayer } from "./Bing";
