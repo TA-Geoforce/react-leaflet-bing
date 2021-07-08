@@ -5,12 +5,14 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "clean:lib": "rmdir /s ./lib",
-    "compile:lib": "babel src --out-dir lib",
+    "build": "npm run build:lib && npm run build:dist && npm run build:dev",
+    "build:dist": "webpack src/index.js --output dist/react-leaflet-bing.min.js",
+    "build:dev": "webpack src/index.js --mode development --output dist/react-leaflet-bing.js",
     "build:lib": "npm run compile:lib",
-    "build:dist": "webpack src/index.js dist/react-leaflet-bing.js & webpack -p src/index.js dist/react-leaflet-bing.min.js",
-    "build": "npm run build:lib && npm run build:dist",
+    "clean:lib": "rm -Rf ./lib",
+    "compile:lib": "babel src --out-dir lib",
     "example": "webpack-dev-server --config ./example/webpack.config.js",
+    "prepublishOnly": "npm run build",
     "lint": "eslint ./src"
   },
   "repository": {

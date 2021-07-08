@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapContainer, TileLayer, LayersControl } from 'react-leaflet'
-import {BingLayer} from '../dist/index.js'
+import { BingLayer } from '../lib/index.js'
 
 const { BaseLayer } = LayersControl;
 
